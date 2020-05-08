@@ -62,7 +62,7 @@ Shader "Holo2FirstHand/HoloFlower"
 		void vert(inout appdata_full v) 
 		{
 			float2 world = mul(unity_ObjectToWorld, v.vertex);
-			float scale =  expSustainedImpulse(max(0, -world.y * _Scale + _Offset), _Release, _Attack);
+			float scale =  expSustainedImpulse(max(0, -v.vertex.z * unity_ObjectToWorld[0] * _Scale + _Offset), _Release, _Attack);
 			v.vertex.xyz *= float3(scale, scale, 1);
 		}
 
