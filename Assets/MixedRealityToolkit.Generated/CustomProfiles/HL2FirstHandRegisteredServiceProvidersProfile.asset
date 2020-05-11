@@ -22,3 +22,11 @@ MonoBehaviour:
     runtimePlatform: 8
     configurationProfile: {fileID: 11400000, guid: 236baf35803f73342b69c842fe4afb1c,
       type: 2}
+  - componentType:
+      reference: Microsoft.MixedReality.Toolkit.Extensions.SceneTransitions.SceneTransitionService,
+        Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService
+    componentName: Scene Transition Service
+    priority: 10
+    runtimePlatform: 15
+    configurationProfile: {fileID: 11400000, guid: 45c20fade71a3ec418860b757ff5a5ce,
+      type: 2}

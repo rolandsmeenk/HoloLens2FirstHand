@@ -1,19 +1,24 @@
 ﻿using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Input;
-using System.Linq;
 using UnityEngine;
 
-public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityTouchHandler
+public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler
 {
     public GameObject PrefabToSpawn;
     public LayerMask LayerMask;
     public float AngleDegreesThreshold = 15f;
+    public Vector3 Offset;
 
-    private void Awake()
+    private void OnEnable()
     {
         MixedRealityToolkit.Instance.GetService<IMixedRealityInputSystem>().RegisterHandler<IMixedRealityPointerHandler>(this);
-        MixedRealityToolkit.Instance.GetService<IMixedRealityInputSystem>().RegisterHandler<IMixedRealityTouchHandler>(this); 
     }
+
+    private void OnDisable()
+    {
+        MixedRealityToolkit.Instance.GetService<IMixedRealityInputSystem>().UnregisterHandler<IMixedRealityPointerHandler>(this);
+    }
+
 
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
@@ -27,7 +32,7 @@ public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler, IM
                 // Filter based on layermask
                 if (((1 << result.Details.Object.layer) & LayerMask) != 0)
                 {
-                    Instantiate(PrefabToSpawn, result.Details.Point, Quaternion.LookRotation(result.Details.Normal));
+                    Instantiate(PrefabToSpawn, result.Details.Point + Offset, OrientToCamera(result.Details.Point));
 
                     eventData.Use();
                 }
@@ -35,9 +40,22 @@ public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler, IM
         }
     }
 
+    private Quaternion OrientToCamera(Vector3 position)
+    {
+        Vector3 directionToTarget = Camera.main.transform.position - position;
+
+        directionToTarget.y = 0.0f;
+
+        if (directionToTarget.sqrMagnitude < 0.001f)
+        {
+            return Quaternion.identity;
+        }
+
+        return Quaternion.LookRotation(-directionToTarget);
+    }
+
     public void OnPointerDown(MixedRealityPointerEventData eventData)
     {
-        
     }
 
     public void OnPointerDragged(MixedRealityPointerEventData eventData)
@@ -46,40 +64,5 @@ public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler, IM
 
     public void OnPointerUp(MixedRealityPointerEventData eventData)
     {
-        
-    }
-
-    private void Update()
-    {
-
-        var hand = HandJointUtils.FindHand(Microsoft.MixedReality.Toolkit.Utilities.Handedness.Any);
-        //var nearPointers = PointerUtils.GetPointers<IMixedRealityNearPointer>().ToList();
-
-        //foreach (var pointer in nearPointers)
-        //{
-        //    if (pointer.IsNearObject)
-        //    {
-        //        float distance; 
-        //        if (pointer.TryGetDistanceToNearestSurface(out distance))
-        //        {
-        //            Debug.Log(pointer.PointerName + "  " + distance);
-        //        }
-        //    }
-        //}
-    }
-
-    public void OnTouchStarted(HandTrackingInputEventData eventData)
-    {
-        
-    }
-
-    public void OnTouchCompleted(HandTrackingInputEventData eventData)
-    {
-        
-    }
-
-    public void OnTouchUpdated(HandTrackingInputEventData eventData)
-    {
-        
     }
 }

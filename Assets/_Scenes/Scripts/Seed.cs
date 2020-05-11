@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Microsoft.MixedReality.Toolkit.UI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,12 +19,13 @@ public class Seed : MonoBehaviour
         GrowthRenderer.enabled = false;
     }
 
-    public void Activate()
+    public void Activate(ManipulationEventData data)
     {
         _rigidBody = gameObject.AddComponent<Rigidbody>();
 
         _rigidBody.mass = 0.01f;
         _rigidBody.drag = 5;
+        _rigidBody.velocity = data.PointerVelocity;
     }
 
     // Detached the object from it's current parent (eg. hand menu)
@@ -32,19 +34,32 @@ public class Seed : MonoBehaviour
         transform.parent = null;
     }
 
-    // Detect collision with spatialmesh
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (_rigidBody != null  && ((1 << collision.gameObject.layer) & LayerMask) != 0)
+        if (_rigidBody != null &&  ((1 << collision.gameObject.layer) & LayerMask) != 0)
         {
             // Disable rigid body and collider
             _rigidBody.isKinematic = true;
             this.GetComponent<Collider>().enabled = false;
-
-            this.transform.rotation = Quaternion.identity;
+            this.transform.rotation = OrientToCamera(this.transform.position);
 
             StartCoroutine(Appear());
         }
+    }
+
+    private Quaternion OrientToCamera(Vector3 position)
+    {
+        Vector3 directionToTarget = Camera.main.transform.position - position;
+
+        directionToTarget.y = 0.0f;
+
+        if (directionToTarget.sqrMagnitude < 0.001f)
+        {
+            return Quaternion.identity;
+        }
+
+        return Quaternion.LookRotation(-directionToTarget);
     }
 
     private IEnumerator Appear()

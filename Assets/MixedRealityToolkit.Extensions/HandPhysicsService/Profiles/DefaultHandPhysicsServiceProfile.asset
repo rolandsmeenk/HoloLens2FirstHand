@@ -16,5 +16,6 @@ MonoBehaviour:
   handPhysicsLayer: 0
   fingerTipKinematicBodyPrefab: {fileID: 6269093343897851288, guid: f3b3591b938890745b0e96406eca7a80,
     type: 3}
-  usePalmKinematicBody: 0
-  palmKinematicBodyPrefab: {fileID: 0}
+  usePalmKinematicBody: 1
+  palmKinematicBodyPrefab: {fileID: 7890367414255737973, guid: b949bdbb320c0f046a0189c3c867b380,
+    type: 3}

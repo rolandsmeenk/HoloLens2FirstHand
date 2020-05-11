@@ -47,7 +47,7 @@
 			half4 frag(v2f i) : COLOR
 			{
 				float s = smoothstep(_Min, 1, dot(normalize(i.normal), half3(0,1,0)));
-				return s * tex2D(_MainTex, i.world.xz * _MainTex_ST.xy + _MainTex_ST.zw) * _BaseColor;
+				return s * tex2D(_MainTex, i.world.xz * _MainTex_ST.xy + _MainTex_ST.zw).r * _BaseColor;
 			}
 			ENDCG
 		}

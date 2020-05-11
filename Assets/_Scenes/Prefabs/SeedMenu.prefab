@@ -183,7 +183,7 @@ MonoBehaviour:
   trackedHandness: 3
   trackedHandJoint: 2
   transformOverride: {fileID: 9021861834299192758}
-  additionalOffset: {x: 0, y: -0.036, z: 0}
+  additionalOffset: {x: 0, y: -0.05, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
 --- !u!114 &6016214238194564789
@@ -476,7 +476,7 @@ MonoBehaviour:
   trackedHandness: 3
   trackedHandJoint: 2
   transformOverride: {fileID: 9021861834299192758}
-  additionalOffset: {x: 0, y: 0.036, z: 0}
+  additionalOffset: {x: 0, y: 0.05, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
 --- !u!114 &3815561185697578249

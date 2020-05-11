@@ -14,7 +14,9 @@ ModelImporter:
     2000000: Camera
     2100000: Material_46
     2300000: root
+    2300002: //RootNode
     3300000: root
+    3300002: //RootNode
     4300000: root
     10800000: Light
   externalObjects: {}

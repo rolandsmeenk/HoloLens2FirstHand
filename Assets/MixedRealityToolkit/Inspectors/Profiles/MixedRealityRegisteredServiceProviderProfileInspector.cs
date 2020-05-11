@@ -79,6 +79,12 @@ namespace Microsoft.MixedReality.Toolkit.Editor
                     return;
                 }
 
+                // RS
+                if (configFoldouts.Length != list.arraySize)
+                {
+                    configFoldouts = new bool[list.arraySize];
+                }
+
                 EditorGUILayout.Space();
 
                 if (list == null || list.arraySize == 0)

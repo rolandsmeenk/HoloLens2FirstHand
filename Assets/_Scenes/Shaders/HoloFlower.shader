@@ -27,10 +27,12 @@ Shader "Holo2FirstHand/HoloFlower"
 
         sampler2D _MainTex;
 
-        struct Input
-        {
-            float2 uv_MainTex;
-        };
+		struct Input {
+			float2 uv_MainTex;
+			float3 worldNormal;
+			float3 viewDir;
+			INTERNAL_DATA
+		};
 
         half _Glossiness;
         half _Metallic;
@@ -62,16 +64,17 @@ Shader "Holo2FirstHand/HoloFlower"
 		void vert(inout appdata_full v) 
 		{
 			float2 world = mul(unity_ObjectToWorld, v.vertex);
-			float scale =  expSustainedImpulse(max(0, -v.vertex.z * unity_ObjectToWorld[0] * _Scale + _Offset), _Release, _Attack);
-			v.vertex.xyz *= float3(scale, scale, 1);
+			float scale =  expSustainedImpulse(max(0, -v.vertex.y * unity_ObjectToWorld[0] * _Scale + _Offset), _Release, _Attack);
+			v.vertex.xyz *= float3(scale, 1, scale);
 		}
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-            // Albedo comes from a texture tinted by color
-            fixed4 c = lerp(_Color, tex2D (_MainTex, IN.uv_MainTex), gain(_Offset, 2.));
+			float f = saturate(dot(normalize(IN.worldNormal), normalize(IN.viewDir)));
+			float g = gain(_Offset, 2.);
+			fixed4 c = lerp(_Color, tex2D(_MainTex, IN.uv_MainTex), g);
+			o.Emission = lerp(_Color, 0, f) * (1-g);
             o.Albedo = c.rgb;
-            // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
