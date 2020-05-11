@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b26242513faaf499512d575630738f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentTransform: {fileID: 377928038}
   PrefabToSpawn: {fileID: 327883171496076971, guid: 81afeff7c12e7d346b016367c85fe623,
     type: 3}
   LayerMask:

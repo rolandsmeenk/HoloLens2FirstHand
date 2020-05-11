@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler
 {
+    public Transform ParentTransform;
     public GameObject PrefabToSpawn;
     public LayerMask LayerMask;
     public float AngleDegreesThreshold = 15f;
@@ -16,9 +17,11 @@ public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler
 
     private void OnDisable()
     {
-        MixedRealityToolkit.Instance.GetService<IMixedRealityInputSystem>().UnregisterHandler<IMixedRealityPointerHandler>(this);
+        if (MixedRealityToolkit.Instance && MixedRealityToolkit.Instance.HasActiveProfile)
+        {
+            MixedRealityToolkit.Instance.GetService<IMixedRealityInputSystem>()?.UnregisterHandler<IMixedRealityPointerHandler>(this);
+        }
     }
-
 
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
@@ -32,7 +35,7 @@ public class SpawnOnSpatialMesh : MonoBehaviour, IMixedRealityPointerHandler
                 // Filter based on layermask
                 if (((1 << result.Details.Object.layer) & LayerMask) != 0)
                 {
-                    Instantiate(PrefabToSpawn, result.Details.Point + Offset, OrientToCamera(result.Details.Point));
+                    Instantiate(PrefabToSpawn, result.Details.Point + Offset, OrientToCamera(result.Details.Point), ParentTransform);
 
                     eventData.Use();
                 }
