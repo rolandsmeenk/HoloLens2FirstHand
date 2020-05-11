@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class SpawnOnObject : MonoBehaviour
 {
+    public Transform ParentTransform;
     public GameObject PrefabToSpawn;
 
     public void Spawn(MixedRealityPointerEventData eventData)
@@ -10,7 +11,7 @@ public class SpawnOnObject : MonoBehaviour
         if (PrefabToSpawn != null)
         {
             var result = eventData.Pointer.Result;
-            Instantiate(PrefabToSpawn, result.Details.Point, Quaternion.identity);
+            Instantiate(PrefabToSpawn, result.Details.Point, Quaternion.identity, ParentTransform);
         }
     }
 }
