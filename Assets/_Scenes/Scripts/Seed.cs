@@ -34,7 +34,6 @@ public class Seed : MonoBehaviour
         transform.parent = null;
     }
 
-
     private void OnCollisionEnter(Collision collision)
     {
         if (_rigidBody != null &&  ((1 << collision.gameObject.layer) & LayerMask) != 0)

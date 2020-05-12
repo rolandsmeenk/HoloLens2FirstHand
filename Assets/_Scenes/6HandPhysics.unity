@@ -546,5 +546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: treestump
       objectReference: {fileID: 0}
+    - target: {fileID: 6398809510081009831, guid: 68101fea64e438f4f94796221fa4399e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68101fea64e438f4f94796221fa4399e, type: 3}

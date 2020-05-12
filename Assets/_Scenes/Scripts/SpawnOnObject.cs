@@ -8,7 +8,7 @@ public class SpawnOnObject : MonoBehaviour
 
     public void Spawn(MixedRealityPointerEventData eventData)
     {
-        if (PrefabToSpawn != null)
+        if (PrefabToSpawn != null && !eventData.used)
         {
             var result = eventData.Pointer.Result;
             Instantiate(PrefabToSpawn, result.Details.Point, Quaternion.identity, ParentTransform);
