@@ -1,7 +1,7 @@
 # First Hand Experiences with HoloLens 2
 
 Talk given at these events:
-  * Mixed Reality User Group meeting, 13 May 2020, Ede (NL)
+  * Mixed Reality User Group meeting, 13 May 2020, Online event in AltSpaceVR
 
 ## Tools used
   * Unity 2018.4.21f1
