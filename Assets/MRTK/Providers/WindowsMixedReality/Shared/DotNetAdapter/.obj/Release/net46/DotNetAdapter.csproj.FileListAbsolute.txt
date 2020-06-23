@@ -1,0 +1,10 @@
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\System.Drawing.Primitives.dll
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csprojAssemblyReference.cache
+C:\Store\Develop\Projects\HoloLens2FirstHand\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csproj.CopyComplete

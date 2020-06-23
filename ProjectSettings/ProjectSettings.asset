@@ -537,6 +537,7 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
+    1: 
     4: 
     7: 
     14: DOTNETWINRT_PRESENT
