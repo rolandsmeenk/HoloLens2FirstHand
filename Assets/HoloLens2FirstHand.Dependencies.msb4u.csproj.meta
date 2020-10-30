@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 1ee9176a960da4947aad748d7473c898
+guid: 452f47532527dc6488e7fa7e6966ab7c
 ScriptedImporter:
-  fileIDToRecycleName:
-    11400000: HoloLens2FirstHand.Dependencies.msb4u
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
