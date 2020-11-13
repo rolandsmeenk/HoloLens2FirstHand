@@ -31,96 +31,60 @@ MonoBehaviour:
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 7e54e36c44f826c438c95da79f8de638, type: 3}
   contentScenes:
-  - Name: MRTKExamplesHubMainMenu
-    Path: Assets/Samples/Mixed Reality Toolkit Examples/2.5.1/Experimental - ExamplesHub/Scenes/MRTKExamplesHubMainMenu.unity
-    Included: 0
-    BuildIndex: -1
+  - Name: FirstHandMenu
+    Path: Assets/_Scenes/FirstHandMenu.unity
+    Included: 1
+    BuildIndex: 1
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 63a00118e809c754f9c7911bb85d635f, type: 3}
-  - Name: HandInteractionExamples
-    Path: Assets/Samples/Mixed Reality Toolkit Examples/2.5.1/Demos - HandTracking/Scenes/HandInteractionExamples.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: b38079924a649244f8b26739cbe93ad0, type: 3}
+  - Name: 2Grabbable
+    Path: Assets/_Scenes/2Grabbable.unity
+    Included: 1
+    BuildIndex: 3
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 3dd4a396b5225f8469b9a1eb608bfa57, type: 3}
-  - Name: ClippingExamples
-    Path: Assets/MRTK/Examples/Demos/StandardShader/Scenes/ClippingExamples.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: fd07e3348861d6d43ab3c4ee7e8b28d0, type: 3}
+  - Name: 3SpatialMesh
+    Path: Assets/_Scenes/3SpatialMesh.unity
+    Included: 1
+    BuildIndex: 4
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: e532091edada3e04aa706112e8d5f310, type: 3}
-  - Name: TooltipExamples
-    Path: Assets/MRTK/Examples/Demos/UX/Tooltips/Scenes/TooltipExamples.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: 89ff2c7d7d06f6e4c8c91b2017e32a9a, type: 3}
+  - Name: 4PlaceOnObject
+    Path: Assets/_Scenes/4PlaceOnObject.unity
+    Included: 1
+    BuildIndex: 5
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: de90a43947eced441b4c426e11f35f28, type: 3}
-  - Name: MaterialGallery
-    Path: Assets/MRTK/Examples/Demos/StandardShader/Scenes/MaterialGallery.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: a7d1ad13081a0094796bce1335b57d3f, type: 3}
+  - Name: 5PlaceOnSpatialMesh
+    Path: Assets/_Scenes/5PlaceOnSpatialMesh.unity
+    Included: 1
+    BuildIndex: 6
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: c6b1477d31864dff836e9738518eae60, type: 3}
-  - Name: BoundingBoxExamples
-    Path: Assets/MRTK/Examples/Demos/UX/BoundingBox/Scenes/BoundingBoxExamples.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: 7cc881639ce98d44f9e2dd13dad86367, type: 3}
+  - Name: 6HandPhysics
+    Path: Assets/_Scenes/6HandPhysics.unity
+    Included: 1
+    BuildIndex: 7
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 9da574c0affd04d42a6b1e5db09e82b4, type: 3}
-  - Name: PressableButtonExample
-    Path: Assets/MRTK/Examples/Demos/UX/PressableButton/Scenes/PressableButtonExample.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: a6b910877371b3e4582702021d56dd38, type: 3}
+  - Name: 7DroppableSeed
+    Path: Assets/_Scenes/7DroppableSeed.unity
+    Included: 1
+    BuildIndex: 8
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: b2d06bb8d7f107d4783a56c796c5c120, type: 3}
-  - Name: HandMenuExamples
-    Path: Assets/Samples/Mixed Reality Toolkit Examples/2.5.1/Demos - HandTracking/Scenes/HandMenuExamples.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: cc12b8d568c66b64e99d170e592284aa, type: 3}
+  - Name: 8HandMenu
+    Path: Assets/_Scenes/8HandMenu.unity
+    Included: 1
+    BuildIndex: 9
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 2792ec9767804e644906ab978f2eed23, type: 3}
-  - Name: SlateExample
-    Path: Assets/MRTK/Examples/Demos/UX/Slate/SlateExample.unity
-    Included: 0
-    BuildIndex: -1
+    Asset: {fileID: 102900000, guid: ad8e685d5f69bc64ca7eb42db2cf6259, type: 3}
+  - Name: GrabbablePlayground
+    Path: Assets/_Scenes/GrabbablePlayground.unity
+    Included: 1
+    BuildIndex: 10
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 86e8b0c6246dbb74aa04ecd40a57d89c, type: 3}
-  - Name: SliderExample
-    Path: Assets/MRTK/Examples/Demos/UX/Slider/Scenes/SliderExample.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: 086aad2912678d04e968264b2398004b, type: 3}
-  - Name: EyeTrackingDemo-02-TargetSelection
-    Path: Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-02-TargetSelection.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: 55643f7e4eceb734784192b162f565e0, type: 3}
-  - Name: EyeTrackingDemo-03-Navigation
-    Path: Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-03-Navigation.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: 5df475f0bf57b1f488d59e0e16040d9a, type: 3}
-  - Name: EyeTrackingDemo-04-TargetPositioning
-    Path: Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-04-TargetPositioning.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: 91ded1f5ef2ae854ba4ac94eca7a2494, type: 3}
-  - Name: EyeTrackingDemo-05-Visualizer
-    Path: Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-05-Visualizer.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: 2d6c43a82f3a88c4dbdc3b5e99a68d8a, type: 3}
-  - Name: NearMenuExamples
-    Path: Assets/Samples/Mixed Reality Toolkit Examples/2.5.1/Demos - HandTracking/Scenes/NearMenuExamples.unity
-    Included: 0
-    BuildIndex: -1
-    Tag: Untagged
-    Asset: {fileID: 102900000, guid: bf3eb3415bffceb41810526380c2c71c, type: 3}
+    Asset: {fileID: 102900000, guid: dac11021f3ddcf44a8aefd6c3516617f, type: 3}
   permittedLightingSceneComponentTypes:
   - reference: UnityEngine.Transform, UnityEngine.CoreModule
   - reference: UnityEngine.GameObject, UnityEngine.CoreModule

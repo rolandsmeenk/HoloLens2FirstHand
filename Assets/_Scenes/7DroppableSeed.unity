@@ -280,6 +280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoseSeed
       objectReference: {fileID: 0}
+    - target: {fileID: 959111055305589989, guid: 8afbffdf8a705a6489fa8cd2f24c3b95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8afbffdf8a705a6489fa8cd2f24c3b95, type: 3}
 --- !u!1 &534669902

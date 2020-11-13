@@ -274,12 +274,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -452,12 +452,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -1021,12 +1021,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -1308,12 +1308,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -1526,12 +1526,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -1699,12 +1699,12 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
@@ -1876,7 +1876,7 @@ PrefabInstance:
     - target: {fileID: 2701701781877227748, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5704342747490533093, guid: 8e1c685e6c336ae4ab1ed69b6b54916b,
         type: 3}

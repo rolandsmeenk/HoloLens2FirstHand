@@ -329,8 +329,8 @@ MonoBehaviour:
   contentScene:
     Name: FirstHandMenu
     Path: Assets/_Scenes/FirstHandMenu.unity
-    Included: 0
-    BuildIndex: -1
+    Included: 1
+    BuildIndex: 1
     Tag: Untagged
     Asset: {fileID: 102900000, guid: b38079924a649244f8b26739cbe93ad0, type: 3}
   loadOnStartup: 1
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 7e7c962b9eb9dfa44993d5b2f2576752, type: 2}
+  activeProfile: {fileID: 11400000, guid: 30bf0474b69817f439974a104d9e81d5, type: 2}
 --- !u!4 &1699541884
 Transform:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ PrefabInstance:
     - target: {fileID: 7236097622359626994, guid: 26b0c24187a40734a89bfc6c224c8c60,
         type: 3}
       propertyPath: contentScene.BuildIndex
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7236097622359626994, guid: 26b0c24187a40734a89bfc6c224c8c60,
         type: 3}
@@ -578,7 +578,7 @@ PrefabInstance:
     - target: {fileID: 7236097622359626994, guid: 26b0c24187a40734a89bfc6c224c8c60,
         type: 3}
       propertyPath: contentScene.Included
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8364699125781508857, guid: 26b0c24187a40734a89bfc6c224c8c60,
         type: 3}

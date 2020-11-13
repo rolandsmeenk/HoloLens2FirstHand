@@ -45,11 +45,13 @@ MonoBehaviour:
   diagnosticsSystemType:
     reference: Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem,
       Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem
-  sceneSystemProfile: {fileID: 0}
-  enableSceneSystem: 0
+  sceneSystemProfile: {fileID: 11400000, guid: 804bab7b8e8e6e545a0924260c4f5c3f, type: 2}
+  enableSceneSystem: 1
   sceneSystemType:
-    reference: 
-  registeredServiceProvidersProfile: {fileID: 11400000, guid: efbaf6ea540c69f4fb75415a5d145a53,
+    reference: Microsoft.MixedReality.Toolkit.SceneSystem.MixedRealitySceneSystem,
+      Microsoft.MixedReality.Toolkit.Services.SceneSystem
+  registeredServiceProvidersProfile: {fileID: 11400000, guid: c6350dc7b2ef4c74d92c18a06fefda57,
     type: 2}
   useServiceInspectors: 1
   renderDepthBuffer: 0
+  enableVerboseLogging: 0
